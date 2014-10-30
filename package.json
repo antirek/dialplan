@@ -1,0 +1,26 @@
+{
+  "name": "dialplan",
+  "version": "1.0.0",
+  "description": "dialplan ========",
+  "main": "app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha --ui tdd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antirek/dialplan.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antirek/dialplan/issues"
+  },
+  "homepage": "https://github.com/antirek/dialplan",
+  "devDependencies": {
+    "mocha": "^2.0.1",
+    "should": "^4.1.0"
+  }
+}
