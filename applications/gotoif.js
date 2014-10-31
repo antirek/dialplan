@@ -15,7 +15,7 @@ GotoIf.prototype.getArgsAsString = function(){
 		throw 'Required first parameter!';
 	}
 	var str = (this.args[1]) ? this.args[0] + '?' + this.args[1] : this.args[0] + '?';
-	str += (this.args[2]) ?  ':' + this.args[2] : '';
+	str += (this.args[2]) ?  ':' + this.args[2] : ':';
 	return str;
 }
 

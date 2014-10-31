@@ -5,8 +5,10 @@ var Extension = function(template){
 	this.template = template;
 }
 
-Extension.prototype.append = function(item, label){
+Extension.prototype.append = function(){
 	var args = Array.prototype.slice.call(arguments, 0);
+	var item = (args[1]) ? args[1] : args[0];
+	var label = (args[1]) ? args[0] : null;
 	if(item instanceof Application){
 		this.sequence.push([item, label]);
 	}else{
