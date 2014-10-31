@@ -3,19 +3,16 @@ var Extension = function(template){
 	this.template = template;
 }
 
-Extension.prototype.append = function(application){
-	this.sequence.push(application);
+Extension.prototype.append = function(item){
+	this.sequence.push(item);
 }
 
 Extension.prototype.getDialplanSequence = function(){
-	var sequence = [];
-	for(var i = 1; i <= this.sequence.length; i++){
-		sequence.push(
-			[this.template, i, this.sequence[i-1].getAppAsString()]
-			.join(',')
-			);
-	}
-	return sequence;
+	return this.sequence.map(this.getSequenceItemAsString, this);
+}
+
+Extension.prototype.getSequenceItemAsString = function(item, index){
+	return [this.template, index, item.getAsString()].join(',');
 }
 
 module.exports = Extension;

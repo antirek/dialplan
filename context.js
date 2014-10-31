@@ -9,12 +9,9 @@ Context.prototype.append = function(extension){
 
 Context.prototype.getContentForOneExtension = function(extension){
 	var sequence = extension.getDialplanSequence();
-	var arrStrings = [];
-	
-	for (var j = 0; j < sequence.length; j++){
-		arrStrings.push('exten => ' + sequence[j]);
-	}
-	
+	var arrStrings = sequence.map(function(element, index){
+		return 'exten=>' + element;
+	});
 	return arrStrings;
 }
 

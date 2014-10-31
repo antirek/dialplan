@@ -13,15 +13,15 @@ var hangup = new Hangup('22');
 var set = new Set('as','qw');
 
 
-console.log(dial.getAppAsString());
+console.log(dial.getAsString());
 console.log(dial.getName());
 console.log(dial.args);
 
-console.log(hangup.getAppAsString());
+console.log(hangup.getAsString());
 console.log(hangup.getName());
 console.log(hangup.args);
 
-console.log(set.getAppAsString());
+console.log(set.getAsString());
 console.log(set.getName());
 console.log(set.args);
 

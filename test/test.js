@@ -9,15 +9,15 @@
         });
         test('check output format 1', function() {
         	var dial = new Dial("SIP/120");
-            return assert.equal(dial.getAppAsString(), 'Dial(SIP/120)');
+            return assert.equal(dial.getAsString(), 'Dial(SIP/120)');
         });
         test('check output format 2', function() {
         	var dial = new Dial("SIP/120", 180);
-            return assert.equal(dial.getAppAsString(), 'Dial(SIP/120,180)');
+            return assert.equal(dial.getAsString(), 'Dial(SIP/120,180)');
         });
-        test('check output format 2', function() {
+        test('check output format 3', function() {
         	var dial = new Dial("SIP/120", 180, 'tTO');
-            return assert.equal(dial.getAppAsString(), 'Dial(SIP/120,180,tTO)');
+            return assert.equal(dial.getAsString(), 'Dial(SIP/120,180,tTO)');
         });
     });
 
@@ -29,11 +29,11 @@
         });
         test('check output format 1', function() {
         	var hangup = new Hangup();
-            return assert.equal(hangup.getAppAsString(),'Hangup()');
+            return assert.equal(hangup.getAsString(),'Hangup()');
         });
         test('check output format 2', function() {
         	var hangup = new Hangup(22);
-            return assert.equal(hangup.getAppAsString(),'Hangup(22)');
+            return assert.equal(hangup.getAsString(),'Hangup(22)');
         });
         
     });

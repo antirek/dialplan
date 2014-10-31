@@ -4,7 +4,7 @@
   "description": "dialplan ========",
   "main": "app.js",
   "directories": {
-    "test": "tests"
+    "test": "test"
   },
   "scripts": {
     "test": "node_modules/.bin/mocha --ui tdd"
@@ -14,7 +14,7 @@
     "url": "https://github.com/antirek/dialplan.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/antirek/dialplan/issues"
   },
