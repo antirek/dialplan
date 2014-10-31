@@ -1,10 +1,16 @@
+var Application = require('./applications/application');
+
 var Extension = function(template){
 	this.sequence = [];
 	this.template = template;
 }
 
 Extension.prototype.append = function(item){
-	this.sequence.push(item);
+	if(item instanceof Application){
+		this.sequence.push(item);
+	}else{
+		throw 'Not dialplan application';
+	}
 }
 
 Extension.prototype.getDialplanSequence = function(){
