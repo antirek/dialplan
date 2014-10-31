@@ -7,9 +7,12 @@ var Context = require('./context');
 
 
 var extension = new Extension('120');
+
 extension.append(new A.Set('qw', '123'));
+extension.append(new A.Answer(10));
 extension.append(new A.Verbose('additional'));
 extension.append('dial', new A.Dial('SIP/100'));
+extension.append(new A.Playback('hello', 'noanswer'));
 extension.append(new A.GotoIf('$["${CALL_FROM_GROUP}"="TRUE"]','dial'));
 extension.append(new A.Hangup());
 
