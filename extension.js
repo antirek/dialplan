@@ -12,7 +12,7 @@ Extension.prototype.append = function(){
 	if(item instanceof Application){
 		this.sequence.push([item, label]);
 	}else{
-		throw 'Not dialplan application';
+		throw new Error('Not dialplan application');
 	}
 }
 

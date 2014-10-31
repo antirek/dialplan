@@ -20,9 +20,9 @@ Context.prototype.getContent = function(){
 
 	content.push('[' + this.name + ']');
 	for(var i = 0; i < this.extensions.length; i++){
-		var hh = this.getContentForOneExtension(this.extensions[i]);		
+		var hh = this.getContentForOneExtension(this.extensions[i]);
 		content = content.concat(hh);
-	}
+	};
 	
 	return content.join('\n');
 }
