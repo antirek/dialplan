@@ -12,7 +12,7 @@ Playback.prototype.getName = function(){
 
 Playback.prototype.getArgsAsString = function(){
 	if(!this.args[0]){
-		throw 'Required first parameter!';
+		throw new Error('Required first parameter!');
 	}
 	return (this.args[1]) ? [this.args[0],this.args[1]].join(',') : this.args[0];
 };

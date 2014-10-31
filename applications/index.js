@@ -5,3 +5,4 @@ module.exports.Verbose = require('./verbose');
 module.exports.GotoIf = require('./gotoif');
 module.exports.Playback = require('./playback');
 module.exports.Answer = require('./answer');
+module.exports.AGI = require('./agi');

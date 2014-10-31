@@ -12,7 +12,7 @@ Set.prototype.getName = function(){
 
 Set.prototype.getArgsAsString = function(){
 	if(!this.args[0] || !this.args[1]){
-		throw 'Required two parameters!';
+		throw new Error('Required two parameters!');
 	}
 	
 	return this.args[0] + '=' + this.args[1];
