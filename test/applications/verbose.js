@@ -2,7 +2,7 @@
     var assert = require("assert");    
     
     suite("Verbose", function() {
-    	var Verbose = require("../applications/verbose");	
+    	var Verbose = require("../../applications/verbose");
         test('test application name', function() {
         	var verbose = new Verbose();
             return assert.equal(verbose.getName(), 'Verbose');

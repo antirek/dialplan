@@ -2,7 +2,7 @@
     var assert = require("assert");
     
     suite("Dial", function() {
-    	var Dial = require("../applications/dial");	
+    	var Dial = require("../../applications/dial");	
         test('test application name', function() {
         	var dial = new Dial("SIP/120");
             return assert.equal(dial.getName(), 'Dial');

@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "node_modules/.bin/mocha --ui tdd"
+    "test": "node_modules/.bin/mocha --ui tdd --recursive"
   },
   "repository": {
     "type": "git",

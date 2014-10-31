@@ -5,9 +5,10 @@ var Extension = function(template){
 	this.template = template;
 }
 
-Extension.prototype.append = function(item){
+Extension.prototype.append = function(item, label){
+	var args = Array.prototype.slice.call(arguments, 0);
 	if(item instanceof Application){
-		this.sequence.push(item);
+		this.sequence.push([item, label]);
 	}else{
 		throw 'Not dialplan application';
 	}
@@ -17,8 +18,9 @@ Extension.prototype.getDialplanSequence = function(){
 	return this.sequence.map(this.getSequenceItemAsString, this);
 }
 
-Extension.prototype.getSequenceItemAsString = function(item, index){
-	return [this.template, index, item.getAsString()].join(',');
+Extension.prototype.getSequenceItemAsString = function(array, index){
+	var priority = (array[1]) ? index + '(' + array[1] + ')' : index;
+	return [this.template, priority, array[0].getAsString()].join(',');
 }
 
 module.exports = Extension;

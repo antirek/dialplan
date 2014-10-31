@@ -1,7 +1,7 @@
 (function() {
     var assert = require("assert");
     suite("Hangup", function() {
-    	var Hangup = require("../applications/hangup");	
+    	var Hangup = require("../../applications/hangup");	
         test('test application name', function() {
         	var hangup = new Hangup();
             return assert.equal(hangup.getName(), 'Hangup');

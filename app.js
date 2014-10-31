@@ -7,9 +7,9 @@ var Context = require('./context');
 
 
 var extension = new Extension('120');
-extension.append(new A.Set('qw', '123'));
+extension.append(new A.Set('qw', '123'), 'start');
 extension.append(new A.Verbose('additional'));
-extension.append(new A.Dial('SIP/100'));
+extension.append(new A.Dial('SIP/100'), 'dial');
 extension.append(new A.Hangup());
 
 

@@ -2,7 +2,7 @@
     var assert = require("assert");
     
     suite("GotoIf", function() {
-    	var GotoIf = require("../applications/gotoif");	
+    	var GotoIf = require("../../applications/gotoif");	
         test('test application name', function() {
         	var gotoif = new GotoIf("SIP/120");
             return assert.equal(gotoif.getName(), 'GotoIf');
