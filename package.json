@@ -1,8 +1,8 @@
 {
   "name": "dialplan",
-  "version": "0.0.2",
-  "description": "dialplan ========",
-  "main": "app.js",
+  "version": "0.0.3",
+  "description": "quick asterisk dialplan",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
