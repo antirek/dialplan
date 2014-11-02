@@ -14,7 +14,11 @@ ami.on('ready', function(){
 
     var dialplan = generateDialplan();
 	
-	/* use extensions.conf for real dialplan reload*/
+	/* 
+	use extensions.conf for real dialplan reload:
+		append '#include "extensions_generated.conf"' to extensions.conf
+		or save generated dialplan to extensions.conf directly
+	*/
 	dialplan.save("/etc/asterisk/extensions_generated.conf", function(err) {
 
 	    if(!err) {
