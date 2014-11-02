@@ -1,3 +1,5 @@
+var fs = require('fs')
+
 var Dialplan = function(name){
 	this.contexts = [];
 	this.name = name;
@@ -13,5 +15,10 @@ Dialplan.prototype.getContent = function(){
 	});
 	return arrStrings.join('\n\n');
 }
+
+Dialplan.prototype.save = function(filename, callback){
+	fs.writeFile(filename, this.getContent(), callback);
+}
+
 
 module.exports = Dialplan;

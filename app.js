@@ -34,7 +34,7 @@ dialplan.append(context2);
 
 console.log(dialplan.getContent());
 
-fs.writeFile("/tmp/extensions_generated.conf", dialplan.getContent(), function(err) {
+dialplan.save("/tmp/extensions_generated.conf", function(err) {
     if(!err) {
         console.log("The file was saved!");
     }
