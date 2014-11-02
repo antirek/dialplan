@@ -15,10 +15,14 @@ Context.prototype.getContentForOneExtension = function(extension){
 	return arrStrings;
 }
 
+Context.prototype.getName = function(){
+	return '[' + this.name + ']';
+}
+
 Context.prototype.getContent = function(){
 	var content = [];
 
-	content.push('[' + this.name + ']');
+	content.push(this.getName());
 	for(var i = 0; i < this.extensions.length; i++){
 		var hh = this.getContentForOneExtension(this.extensions[i]);
 		content = content.concat(hh);
