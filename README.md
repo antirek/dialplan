@@ -12,6 +12,9 @@ Install
 Use
 ===
 `````
+var D = require('dialplan');
+var A = D.Applications;
+
 var extension = new D.Extension('130');
 extension.append(new A.Answer(10));
 extension.append('dial', new A.Dial('SIP/100'));
