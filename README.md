@@ -1,7 +1,8 @@
 dialplan
 ========
 
-generate asterisk dialplan on javascript
+generate asterisk dialplan on javascript / for use with node.js
+> https://wiki.asterisk.org/wiki/display/AST/The+Asterisk+Dialplan
 
 Install
 =======
