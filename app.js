@@ -1,4 +1,3 @@
-var fs = require('fs');
 
 var D = require('./index');
 var A = D.Applications;
@@ -34,8 +33,11 @@ dialplan.append(context2);
 
 console.log(dialplan.getContent());
 
-dialplan.save("/tmp/extensions_generated.conf", function(err) {
+dialplan.save("/etc/asterisk/extensions_generated.conf", function(err) {
     if(!err) {
         console.log("The file was saved!");
     }
 });
+
+
+
