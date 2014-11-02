@@ -1,7 +1,7 @@
 dialplan
 ========
 
-generate asterisk diaplan on javascript
+generate asterisk dialplan on javascript
 
 Install
 =======
