@@ -10,8 +10,7 @@ Answer.prototype.getName = function(){
 	return 'Answer';
 };
 
-Answer.prototype.getArgsAsString = function(){
-	
+Answer.prototype.getArgsAsString = function(){	
 	return (this.args[0]) ? this.args[0] : '';
 };
 

@@ -7,3 +7,6 @@ module.exports.Playback = require('./playback');
 module.exports.Answer = require('./answer');
 module.exports.AGI = require('./agi');
 module.exports.GotoIfTime = require('./gotoiftime');
+module.exports.Goto = require('./goto');
+module.exports.System = require('./system');
+module.exports.SayNumber = require('./saynumber');
