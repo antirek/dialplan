@@ -2,7 +2,6 @@ var fs = require('fs')
 
 var Dialplan = function(name){
 	this.contexts = [];
-	this.name = name;
 }
 
 Dialplan.prototype.append = function(context){

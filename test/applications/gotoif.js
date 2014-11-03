@@ -19,6 +19,12 @@
         	var gotoif = new GotoIf("condition", 1, 2);
             return assert.equal(gotoif.getAsString(), 'GotoIf(condition?1:2)');
         });
+        test('check throw error 1', function() {
+            var gotoif = new GotoIf();
+            return assert.throws(function(){
+                gotoif.getAsString() 
+            }, Error);
+        });
     });
 
 }).call(this);

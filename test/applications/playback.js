@@ -19,6 +19,12 @@
             var playback = new Playback("/tmp/file", 'skip,noanswer');
             return assert.equal(playback.getAsString(), 'Playback(/tmp/file,skip,noanswer)');
         });
+        test('check throw error 1', function() {
+            var playback = new Playback();
+            return assert.throws(function(){
+                playback.getAsString() 
+            }, Error);
+        });
     });
 
 }).call(this);

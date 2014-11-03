@@ -1,13 +1,13 @@
 {
   "name": "dialplan",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "quick asterisk dialplan",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "node_modules/.bin/mocha --ui tdd --recursive --reporter mocha-istanbul"
+    "test": "node_modules/.bin/mocha --ui tdd --recursive"
   },
   "repository": {
     "type": "git",

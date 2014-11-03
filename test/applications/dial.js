@@ -19,6 +19,12 @@
         	var dial = new Dial("SIP/120", 180, 'tTO');
             return assert.equal(dial.getAsString(), 'Dial(SIP/120,180,tTO)');
         });
+        test('check throw error 1', function() {
+            var dial = new Dial();
+            return assert.throws(function(){
+                dial.getAsString() 
+            }, Error);
+        });
     });
 
 }).call(this);
