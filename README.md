@@ -7,7 +7,7 @@ generate asterisk dialplan on javascript / for use with node.js
 Install
 =======
 
-> npm install dialplan [--save]
+> $ npm install dialplan [--save]
 
 
 Use
@@ -28,3 +28,11 @@ dialplan.append(context1);
 
 dialplan.save('/etc/asterisk/extensions.conf',cb);
 `````
+
+Tests
+=====
+> $ npm test
+
+Coverage
+========
+> $ grunt coverage
