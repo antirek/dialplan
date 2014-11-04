@@ -23,6 +23,8 @@ extension_H.append(new A.AGI('agi://127.0.0.1:3007/checkdialstatus',
                             'hangupcause-${HANGUPCAUSE}'
                             ));
 
+extension_H.append(new A.Verbose('${myvar}'));
+
 dialplan.save("/etc/asterisk/extensions_generated.conf", function(err){
     if(!err) {
         console.log("The file was saved!");
