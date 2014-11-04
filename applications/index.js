@@ -11,3 +11,5 @@ module.exports.Goto = require('./goto');
 module.exports.System = require('./system');
 module.exports.SayNumber = require('./saynumber');
 module.exports.ExecIf = require('./execif');
+module.exports.Progress = require('./progress');
+module.exports.Echo = require('./echo');
