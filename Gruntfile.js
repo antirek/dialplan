@@ -14,12 +14,10 @@ module.exports = function(grunt){
             default: {
                 src: [
                   './*.js',
-                  'context.js',
-                  'extension.js',
                   'applications/*.js',
                 ],
                 exclude: [
-                    './Gruntfile.js'
+                    './Gruntfile.js',
                 ],
                 directives: {
                     node: true,
