@@ -1,10 +1,12 @@
-var Application = function(){
-	this.args = [];
-}
+'use strict';
 
-Application.prototype.getAsString = function(){
+var Application = function () {
+    this.args = [];
+};
+
+Application.prototype.getAsString = function () {
     return this.getName() + '(' +
-           this.getArgsAsString() + ')';
-}
+        this.getArgsAsString() + ')';
+};
 
 module.exports = Application;

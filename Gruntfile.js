@@ -16,7 +16,7 @@ module.exports = function(grunt){
                   //'./*.js',
                   'context.js',
                   'extension.js',
-                  'applications/answer.js',
+                  'applications/*.js',
                 ],
                 exclude: [
                     './Gruntfile.js'
@@ -24,6 +24,7 @@ module.exports = function(grunt){
                 directives: {
                     node: true,
                     plusplus: true,
+                    predef: ['Set', 'System']
                 },
             },
         }
