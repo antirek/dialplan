@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/antirek/dialplan",
   "devDependencies": {
+    "grunt-jsdoc": "^0.5.7",
+    "grunt-jslint": "^1.1.12",
     "grunt-mocha-istanbul": "^2.2.0",
     "mocha": "^2.0.1",
     "should": "^4.1.0"

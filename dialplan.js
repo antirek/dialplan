@@ -1,6 +1,10 @@
 var fs = require('fs')
 
-var Dialplan = function(name){
+/**
+ * Dialplan constructor
+ * @constructor
+ */
+var Dialplan = function(){
 	this.contexts = [];
 }
 
@@ -18,6 +22,5 @@ Dialplan.prototype.getContent = function(){
 Dialplan.prototype.save = function(filename, callback){
 	fs.writeFile(filename, this.getContent(), callback);
 }
-
 
 module.exports = Dialplan;
