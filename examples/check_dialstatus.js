@@ -18,7 +18,7 @@ context.append(extension_H);
 
 extension_H.append(new A.Verbose('${DIALSTATUS}'));
 extension_H.append(new A.Verbose('${HANGUPCAUSE}'));
-extension_H.append(new A.AGI('agi://127.0.0.1:3007', 
+extension_H.append(new A.AGI('agi://127.0.0.1:3007/checkdialstatus', 
                             'dialstatus-${DIALSTATUS}', 
                             'hangupcause-${HANGUPCAUSE}'
                             ));
