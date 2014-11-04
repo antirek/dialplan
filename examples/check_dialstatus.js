@@ -19,9 +19,9 @@ context.append(extension_H);
 extension_H.append(new A.Verbose('${DIALSTATUS}'));
 extension_H.append(new A.Verbose('${HANGUPCAUSE}'));
 extension_H.append(new A.AGI('agi://127.0.0.1:3007', 
-							'dialstatus-${DIALSTATUS}', 
-							'hangupcause-${HANGUPCAUSE}'
-							));
+                            'dialstatus-${DIALSTATUS}', 
+                            'hangupcause-${HANGUPCAUSE}'
+                            ));
 
 dialplan.save("/etc/asterisk/extensions_generated.conf", function(err){
     if(!err) {
