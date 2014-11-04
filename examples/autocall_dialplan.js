@@ -17,7 +17,7 @@ extension_S.append(new A.Hangup());
 var extension_H = new D.Extension('h');
 context.append(extension_H);
 
-extension_H.append(new A.ExecIf('$["${HANGUPCAUSE}"="16"]', new System("/tmp/bash.sh")));
+extension_H.append(new A.ExecIf('$["${HANGUPCAUSE}"="16"]', new A.System("/tmp/bash.sh")));
 
 dialplan.save("/etc/asterisk/extensions_autocall.conf", function(err){
     if(!err) {

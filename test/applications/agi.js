@@ -11,6 +11,14 @@
         	var agi = new AGI("http://127.0.0.1:3000/init");
             return assert.equal(agi.getAsString(), 'AGI(http://127.0.0.1:3000/init)');
         });
+        test('check output format 2', function() {
+            var agi = new AGI("http://127.0.0.1:3000/init","param1");
+            return assert.equal(agi.getAsString(), 'AGI(http://127.0.0.1:3000/init,param1)');
+        });
+        test('check output format 3', function() {
+            var agi = new AGI("http://127.0.0.1:3000/init", "param1", "param2", "param3");
+            return assert.equal(agi.getAsString(), 'AGI(http://127.0.0.1:3000/init,param1,param2,param3)');
+        });
         test('check throw error', function() {
             var agi = new AGI();
             return assert.throws(function(){ 
