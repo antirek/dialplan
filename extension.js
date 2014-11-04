@@ -1,9 +1,5 @@
 var Application = require('./applications/application');
 
-/**
- * Extension constructor
- * @constructor
- */
 var Extension = function(template){
 	this.sequence = [];
 	this.template = template;
