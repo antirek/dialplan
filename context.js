@@ -1,34 +1,36 @@
-var Context = function(name){
-	this.extensions = [];
-	this.name = name;
-}
+'use strict';
 
-Context.prototype.append = function(extension){
-	this.extensions.push(extension);
-}
+var Context = function (name) {
+    this.extensions = [];
+    this.name = name;
+};
 
-Context.prototype.getContentForOneExtension = function(extension){
-	var sequence = extension.getDialplanSequence();
-	var arrStrings = sequence.map(function(element, index){
-		return 'exten=>' + element;
-	});
-	return arrStrings;
-}
+Context.prototype.append = function (extension) {
+    this.extensions.push(extension);
+};
 
-Context.prototype.getName = function(){
-	return '[' + this.name + ']';
-}
+Context.prototype.getContentForOneExtension = function (extension) {
+    var sequence = extension.getDialplanSequence(),
+        arrStrings = sequence.map(function (element) {
+            return 'exten=>' + element;
+        });
+    return arrStrings;
+};
 
-Context.prototype.getContent = function(){
-	var content = [];
+Context.prototype.getName = function () {
+    return '[' + this.name + ']';
+};
 
-	content.push(this.getName());
-	for(var i = 0; i < this.extensions.length; i++){
-		var hh = this.getContentForOneExtension(this.extensions[i]);
-		content = content.concat(hh);
-	};
-	
-	return content.join('\n');
-}
+Context.prototype.getContent = function () {
+    var content = [], i, hh;
+
+    content.push(this.getName());
+    for (i = 0; i < this.extensions.length; i++) {
+        hh = this.getContentForOneExtension(this.extensions[i]);
+        content = content.concat(hh);
+    }
+
+    return content.join('\n');
+};
 
 module.exports = Context;

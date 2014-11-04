@@ -8,12 +8,14 @@ module.exports = function(grunt){
                     'recursive': true,
                     'reporter': 'mocha-istanbul'
                 }
-            },            
+            },
         },
         jslint: {
             default: {
                 src: [
                   //'./*.js',
+                  'context.js',
+                  'extension.js',
                   'applications/answer.js',
                 ],
                 exclude: [
@@ -21,6 +23,7 @@ module.exports = function(grunt){
                 ],
                 directives: {
                     node: true,
+                    plusplus: true,
                 },
             },
         }

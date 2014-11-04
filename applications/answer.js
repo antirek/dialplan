@@ -1,4 +1,5 @@
 'use strict';
+
 var Application = require('./application');
 
 var Answer = function () {
