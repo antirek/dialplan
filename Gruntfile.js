@@ -13,7 +13,7 @@ module.exports = function(grunt){
         jslint: {
             default: {
                 src: [
-                  //'./*.js',
+                  './*.js',
                   'context.js',
                   'extension.js',
                   'applications/*.js',

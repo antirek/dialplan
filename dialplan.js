@@ -1,26 +1,24 @@
-var fs = require('fs')
+'use strict';
 
-/**
- * Dialplan constructor
- * @constructor
- */
-var Dialplan = function(){
-	this.contexts = [];
-}
+var fs = require('fs');
 
-Dialplan.prototype.append = function(context){
-	this.contexts.push(context);
-}
+var Dialplan = function () {
+    this.contexts = [];
+};
 
-Dialplan.prototype.getContent = function(){
-	var arrStrings = this.contexts.map(function(element, index){
-		return element.getContent();
-	});
-	return arrStrings.join('\n\n');
-}
+Dialplan.prototype.append = function (context) {
+    this.contexts.push(context);
+};
 
-Dialplan.prototype.save = function(filename, callback){
-	fs.writeFile(filename, this.getContent(), callback);
-}
+Dialplan.prototype.getContent = function () {
+    var arrStrings = this.contexts.map(function (element) {
+        return element.getContent();
+    });
+    return arrStrings.join('\n\n');
+};
+
+Dialplan.prototype.save = function (filename, callback) {
+    fs.writeFile(filename, this.getContent(), callback);
+};
 
 module.exports = Dialplan;

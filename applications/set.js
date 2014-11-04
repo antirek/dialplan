@@ -1,7 +1,7 @@
 'use strict';
 
 var Application = require('./application');
-//*jslint -W020 *//
+
 var Set = function () {
     this.args = Array.prototype.slice.call(arguments, 0);
 };
