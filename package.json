@@ -24,5 +24,8 @@
     "grunt-mocha-istanbul": "^2.2.0",
     "mocha": "^2.0.1",
     "should": "^4.1.0"
+  },
+  "dependencies": {
+    "mocha-istanbul": "~0.2.0"
   }
 }
