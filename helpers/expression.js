@@ -3,7 +3,7 @@
 var Expression = function () {
     this.args = Array.prototype.slice.call(arguments, 0);
 
-    if (this.args.length && this.args.length != 3) {
+    if (this.args.length && this.args.length !== 3) {
         throw new Error('check Expression count params!');
     }
 

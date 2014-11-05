@@ -15,6 +15,7 @@ module.exports = function(grunt){
                 src: [
                   './*.js',
                   'applications/*.js',
+		  'helpers/*.js'
                 ],
                 exclude: [
                     './Gruntfile.js',
