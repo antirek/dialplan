@@ -15,7 +15,10 @@ context.append(extension_S);
 
 //extension_S.append(new A.Set(new F.CDR('language'), 'ru'));
 extension_S.append(new A.Playback('/var/asterisk/sounds/8march-greeting'));
-extension_S.append(new A.Set('dial', new H.Get('DIALSTATUS')));
+extension_S.append(new A.Set('dial', new H.Value('DIALSTATUS')));
+extension_S.append(new A.Set('TRANSFER_COUNT', 
+	new H.Expression(new H.Value('TRANSFER_COUNT'), '+', 1)));
+
 extension_S.append(new A.Hangup());
 
 

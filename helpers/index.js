@@ -1,2 +1,2 @@
-//module.exports.Bool = require('./bool');
-module.exports.Get = require('./get');
+module.exports.Expression = require('./expression');
+module.exports.Value = require('./value');
