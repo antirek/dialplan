@@ -19,7 +19,7 @@ CUT.prototype.getName = function () {
 };
 
 CUT.prototype.getArgsAsString = function () {
-    if (!this.args && (this.args.length < 1 || this.args.length > 3)) {
+    if (!this.args || this.args.length < 1 || this.args.length > 3) {
         throw new Error('Check CUT count variables');
     }
     return this.args.join(',');
