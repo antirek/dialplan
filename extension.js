@@ -10,8 +10,26 @@ var Extension = function (template) {
 Extension.prototype.append = function () {
     var args = Array.prototype.slice.call(arguments, 0),
         item = args[1] || args[0],
-        label = (args[1]) ? args[0] : null;
+        label = (args[1]) ? args[0] : null,
+        array = null,
+        i;
 
+    if (args[0] instanceof Array) {
+        if (args[0].length < 1) {
+            throw new Error('append empty array');
+        }
+
+        array = args[0];
+
+        for (i = 0; i < array.length; i++) {
+            this.appendItem(array[i]);
+        }
+    } else {
+        this.appendItem(item, label);
+    }
+};
+
+Extension.prototype.appendItem = function (item, label) {
     if (item instanceof Application) {
         this.sequence.push([item, label]);
     } else {

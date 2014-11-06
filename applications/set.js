@@ -18,8 +18,8 @@ Set.prototype.getArgsAsString = function () {
         throw new Error('Required two parameters!');
     }
 
-    if(this.args[1] instanceof DialplanFunction){
-    	this.args[1] = this.args[1].get();
+    if (this.args[1] instanceof DialplanFunction) {
+        this.args[1] = this.args[1].get();
     }
 
     return this.args[0] + '=' + this.args[1];

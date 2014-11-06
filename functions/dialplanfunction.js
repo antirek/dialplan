@@ -12,11 +12,11 @@ DialplanFunction.prototype.toString = function () {
 
 DialplanFunction.prototype.getName = function () {
     return '';
-}
+};
 
 DialplanFunction.prototype.getArgsAsString = function () {
     return '';
-}
+};
 
 DialplanFunction.prototype.get = function () {
     return '${' + this.toString() + '}';
