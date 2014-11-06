@@ -14,6 +14,10 @@ Extension.prototype.append = function () {
         array = null,
         i;
 
+    if(!args[0]){
+        throw new Error('must have one parameter!');
+    }
+
     if (args[0] instanceof Array) {
         if (args[0].length < 1) {
             throw new Error('append empty array');
