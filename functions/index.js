@@ -1,3 +1,4 @@
 module.exports.CDR = require('./cdr');
-module.exports.CDR = require('./callerid');
-module.exports.CDR = require('./channel');
+module.exports.CALLERID = require('./callerid');
+module.exports.CHANNEL = require('./channel');
+module.exports.CUT = require('./cut');

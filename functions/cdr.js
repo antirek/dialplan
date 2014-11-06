@@ -1,9 +1,13 @@
 'use strict';
 
+var DialplanFunction = require('./dialplanfunction');
+
 var CDR = function () {
     this.args = Array.prototype.slice.call(arguments, 0);
     return this.toString();
 };
+
+CDR.prototype = new DialplanFunction();
 
 CDR.prototype.toString = function () {
     return this.getName() + '(' +

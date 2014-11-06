@@ -15,8 +15,14 @@ context.append(extension_S);
 
 
 extension_S.append(new A.Set(new F.CDR('language'), 'ru'));
+extension_S.append(new A.Set(new H.Global('CALL_IN'), 'yes'));
+
+extension_S.append(new A.Set('incoming_number', new F.CHANNEL('dnid')));
 extension_S.append(new A.Playback('/var/asterisk/sounds/8march-greeting'));
+
 extension_S.append(new A.Set('dial', new H.Value('DIALSTATUS')));
+extension_S.append(new A.Set('SHORT_NUMBER', new F.CUT(new H.Value('incoming_number'), 1, 3)));
+
 extension_S.append(new A.Set('TRANSFER_COUNT',
 	new H.Expression(new H.Value('TRANSFER_COUNT'), '+', 1)));
 
@@ -28,7 +34,7 @@ context.append(extension_H);
 
 
 extension_H.append(new A.ExecIf(
-	new H.Expression(new H.Value('HANGUPCAUSE'), '=', 16), 
+	new H.Expression(new H.Value('HANGUPCAUSE'), '=', 16),
 	new A.System("/tmp/bash.sh")
 	));
 

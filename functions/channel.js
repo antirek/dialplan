@@ -1,9 +1,13 @@
 'use strict';
 
+var DialplanFunction = require('./dialplanfunction');
+
 var CHANNEL = function () {
     this.args = Array.prototype.slice.call(arguments, 0);
     return this.toString();
 };
+
+CHANNEL.prototype = new DialplanFunction();
 
 CHANNEL.prototype.toString = function () {
     return this.getName() + '(' +
@@ -19,6 +23,10 @@ CHANNEL.prototype.getArgsAsString = function () {
         throw new Error('Required one or more parameters!');
     }
     return this.args.join(',');
+};
+
+CHANNEL.prototype.get = function () {
+    return '${' + this.toString() + '}';
 };
 
 module.exports = CHANNEL;
