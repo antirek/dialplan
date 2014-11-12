@@ -21,10 +21,5 @@ Dialplan.prototype.save = function (filename, callback) {
     fs.writeFile(filename, this.getContent(), callback);
 };
 
-Dialplan.prototype.expression = function(){
-	var args = Array.prototype.slice.call(arguments, 0);
-	var Expression = require('./helpers/expression');
-	return Expression.apply(args);
-}
 
 module.exports = Dialplan;
