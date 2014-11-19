@@ -1,3 +1,6 @@
+//thanks, Anatoly
+
+
 var MAX_SIZE = 99999;
 var aio = require('asterisk.io');
 var sprintf = require('sprintf-js').sprintf;
@@ -11,7 +14,7 @@ ami.on('ready', function () {
     ready = true;
 
     addContextsToFile({
-        'coll': [
+        'context': [
             'exten=>Dial(SIP/100)',
             'exten=>Dial(SIP/101)',
             'exten=>Dial(SIP/102)'
