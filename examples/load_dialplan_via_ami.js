@@ -15,9 +15,9 @@ ami.on('ready', function () {
 
     addContextsToFile({
         'context': [
-            'exten=>Dial(SIP/100)',
-            'exten=>Dial(SIP/101)',
-            'exten=>Dial(SIP/102)'
+            'exten=>_2XXX,1,Dial(SIP/100)',
+            'exten=>_2XXX,2,Dial(SIP/102)',
+            'exten=>_2XXX,3,Dial(SIP/104)'
         ]
     });
 
