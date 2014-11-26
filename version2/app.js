@@ -1,8 +1,8 @@
-var App = require('./application/index');
-var Func = require('./function/index');
-var Extension = require('./extension');
-var H = require('./helper');
-
+var D = require('./index');
+var App = D.Application;
+var Func = D.Function;
+var Extension = D.Extension;
+var H = D.Helper;
 
 
 var arr = [

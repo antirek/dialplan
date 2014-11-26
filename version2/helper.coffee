@@ -9,6 +9,7 @@ Expression = ()->
     throw new Error 'Check count args'
   '$[' + args[0] + args[1] + args[2] + ']'
 
+
 Global = (str)->
   "__" + str
 
