@@ -1,6 +1,6 @@
 {
   "name": "dialplan",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "quick asterisk dialplan",
   "main": "index.js",
   "directories": {
@@ -13,7 +13,8 @@
     "type": "git",
     "url": "https://github.com/antirek/dialplan.git"
   },
-  "author": "",
+  "keywords": ["asterisk", "voip", "dialplan"],
+  "author": "Sergey Dmitriev <serge.dmitriev@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/antirek/dialplan/issues"
