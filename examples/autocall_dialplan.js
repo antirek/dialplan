@@ -32,7 +32,6 @@ var array = [
 
 extension_S.append(array);
 
-
 var extension_H = new D.Extension('h');
 context.append(extension_H);
 

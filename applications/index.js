@@ -1,15 +1,22 @@
-module.exports.Dial = require('./dial');
-module.exports.Hangup = require('./hangup');
-module.exports.Set = require('./set');
-module.exports.Verbose = require('./verbose');
-module.exports.GotoIf = require('./gotoif');
-module.exports.Playback = require('./playback');
-module.exports.Answer = require('./answer');
-module.exports.AGI = require('./agi');
-module.exports.GotoIfTime = require('./gotoiftime');
-module.exports.Goto = require('./goto');
-module.exports.System = require('./system');
-module.exports.SayNumber = require('./saynumber');
-module.exports.ExecIf = require('./execif');
-module.exports.Progress = require('./progress');
-module.exports.Echo = require('./echo');
+
+fs = require('fs');
+
+string = require('string');
+
+applications = {};
+
+fs.readdirSync("./").filter(function(file) {
+	return string(file).endsWith('.js') && file !== 'index.js';
+}).forEach(function(file) {
+
+	var name;
+
+	name = string(file).chompRight('.js').capitalize().s;
+	return applications[name] = function() {
+	  	return new (require("./" + file))(Array.prototype.slice.call(arguments, 0));
+	};
+});
+
+//modules.exports = applications;
+
+console.log(applications.Gotoif('qwqw').getAsString());
