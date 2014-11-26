@@ -6,8 +6,7 @@ var Application = function () {
 };
 
 Application.prototype.getAsString = function () {
-    return this.getName() + '(' +
-        this.getArgsAsString() + ')';
+    return this.getName() + '(' + this.getArgsAsString() + ')';
 };
 
 module.exports = Application;

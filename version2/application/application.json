@@ -1,0 +1,605 @@
+{
+    "AddQueueMember": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_AddQueueMember",
+        "validate": {
+            "count": 2,
+            "args": [
+                { "type": "Helper.Condition" }
+            ]
+        }
+    },
+    "ADSIProg": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ADSIProg"
+    },
+    "AELSub": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_AELSub"
+    },
+    "AgentLogin": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_AgentLogin"
+    },
+    "AgentMonitorOutgoing": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_AgentMonitorOutgoing"
+    },
+    "AGI": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_AGI"
+    },
+    "AlarmReceiver": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_AlarmReceiver"
+    },
+    "AMD": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_AMD"
+    },
+    "Answer": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Answer"
+    },
+    "Authenticate": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Authenticate"
+    },
+    "BackGround": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_BackGround"
+    },
+    "BackgroundDetect": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_BackgroundDetect"
+    },
+    "Bridge": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Bridge"
+    },
+    "Busy": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Busy"
+    },
+    "CallCompletionCancel": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_CallCompletionCancel"
+    },
+    "CallCompletionRequest": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_CallCompletionRequest"
+    },
+    "CELGenUserEvent": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_CELGenUserEvent"
+    },
+    "ChangeMonitor": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ChangeMonitor"
+    },
+    "ChanIsAvail": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ChanIsAvail"
+    },
+    "ChannelRedirect": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ChannelRedirect"
+    },
+    "ChanSpy": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ChanSpy"
+    },
+    "ClearHash": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ClearHash"
+    },
+    "ConfBridge": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ConfBridge"
+    },
+    "Congestion": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Congestion"
+    },
+    "ContinueWhile": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ContinueWhile"
+    },
+    "ControlPlayback": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ControlPlayback"
+    },
+    "DAHDIAcceptR2Call": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DAHDIAcceptR2Call"
+    },
+    "DAHDIBarge": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DAHDIBarge"
+    },
+    "DAHDIRAS": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DAHDIRAS"
+    },
+    "DAHDIScan": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DAHDIScan"
+    },
+    "DAHDISendCallreroutingFacility": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DAHDISendCallreroutingFacility"
+    },
+    "DAHDISendKeypadFacility": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DAHDISendKeypadFacility"
+    },
+    "DateTime": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DateTime"
+    },
+    "DBdel": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DBdel"
+    },
+    "DBdeltree": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DBdeltree"
+    },
+    "DeadAGI": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DeadAGI"
+    },
+    "Dial": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Dial"
+    },
+    "Dictate": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Dictate"
+    },
+    "Directory": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Directory"
+    },
+    "DISA": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DISA"
+    },
+    "DumpChan": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DumpChan"
+    },
+    "EAGI": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_EAGI"
+    },
+    "Echo": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Echo"
+    },
+    "EndWhile": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_EndWhile"
+    },
+    "Exec": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Exec"
+    },
+    "ExecIf": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ExecIf"
+    },
+    "ExecIfTime": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ExecIfTime"
+    },
+    "ExitWhile": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ExitWhile"
+    },
+    "ExtenSpy": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ExtenSpy"
+    },
+    "ExternalIVR": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ExternalIVR"
+    },
+    "Festival": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Festival"
+    },
+    "Flash": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Flash"
+    },
+    "FollowMe": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_FollowMe"
+    },
+    "ForkCDR": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ForkCDR"
+    },
+    "GetCPEID": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_GetCPEID"
+    },
+    "Gosub": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Gosub"
+    },
+    "GosubIf": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_GosubIf"
+    },
+    "Goto": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Goto"
+    },
+    "GotoIf": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_GotoIf"
+    },
+    "GotoIfTime": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_GotoIfTime"
+    },
+    "Hangup": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Hangup"
+    },
+    "IAX2Provision": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_IAX2Provision"
+    },
+    "ICES": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ICES"
+    },
+    "ImportVar": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ImportVar"
+    },
+    "Incomplete": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Incomplete"
+    },
+    "IVRDemo": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_IVRDemo"
+    },
+    "JabberJoin": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_JabberJoin"
+    },
+    "JabberLeave": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_JabberLeave"
+    },
+    "JabberSend": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_JabberSend"
+    },
+    "JabberSendGroup": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_JabberSendGroup"
+    },
+    "JabberStatus": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_JabberStatus"
+    },
+    "JACK": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_JACK"
+    },
+    "Log": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Log"
+    },
+    "Macro": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Macro"
+    },
+    "MacroExclusive": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MacroExclusive"
+    },
+    "MacroExit": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MacroExit"
+    },
+    "MacroIf": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MacroIf"
+    },
+    "MailboxExists": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MailboxExists"
+    },
+    "MeetMe": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MeetMe"
+    },
+    "MeetMeAdmin": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MeetMeAdmin"
+    },
+    "MeetMeChannelAdmin": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MeetMeChannelAdmin"
+    },
+    "MeetMeCount": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MeetMeCount"
+    },
+    "Milliwatt": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Milliwatt"
+    },
+    "MinivmAccMess": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MinivmAccMess"
+    },
+    "MinivmDelete": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MinivmDelete"
+    },
+    "MinivmGreet": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MinivmGreet"
+    },
+    "MinivmMWI": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MinivmMWI"
+    },
+    "MinivmNotify": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MinivmNotify"
+    },
+    "MinivmRecord": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MinivmRecord"
+    },
+    "MixMonitor": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MixMonitor"
+    },
+    "Monitor": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Monitor"
+    },
+    "Morsecode": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Morsecode"
+    },
+    "MP3Player": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MP3Player"
+    },
+    "MSet": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MSet"
+    },
+    "MusicOnHold": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MusicOnHold"
+    },
+    "NBScat": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_NBScat"
+    },
+    "NoCDR": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_NoCDR"
+    },
+    "NoOp": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_NoOp"
+    },
+    "ODBC_Commit": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ODBC_Commit"
+    },
+    "ODBC_Rollback": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ODBC_Rollback"
+    },
+    "ODBCFinish": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ODBCFinish"
+    },
+    "Originate": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Originate"
+    },
+    "OSPAuth": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_OSPAuth"
+    },
+    "OSPFinish": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_OSPFinish"
+    },
+    "OSPLookup": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_OSPLookup"
+    },
+    "OSPNext": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_OSPNext"
+    },
+    "Page": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Page"
+    },
+    "Park": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Park"
+    },
+    "ParkAndAnnounce": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ParkAndAnnounce"
+    },
+    "ParkedCall": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ParkedCall"
+    },
+    "PauseMonitor": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_PauseMonitor"
+    },
+    "PauseQueueMember": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_PauseQueueMember"
+    },
+    "Pickup": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Pickup"
+    },
+    "PickupChan": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_PickupChan"
+    },
+    "Playback": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Playback"
+    },
+    "PlayTones": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_PlayTones"
+    },
+    "PrivacyManager": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_PrivacyManager"
+    },
+    "Proceeding": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Proceeding"
+    },
+    "Progress": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Progress"
+    },
+    "Queue": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Queue"
+    },
+    "QueueLog": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_QueueLog"
+    },
+    "RaiseException": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_RaiseException"
+    },
+    "Read": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Read"
+    },
+    "ReadExten": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ReadExten"
+    },
+    "ReadFile": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ReadFile"
+    },
+    "ReceiveFax": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ReceiveFax"
+    },
+    "ReceiveFAX_app_fax": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ReceiveFAX_app_fax"
+    },
+    "ReceiveFAX_res_fax": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ReceiveFAX_res_fax"
+    },
+    "Record": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Record"
+    },
+    "RemoveQueueMember": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_RemoveQueueMember"
+    },
+    "ResetCDR": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ResetCDR"
+    },
+    "RetryDial": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_RetryDial"
+    },
+    "Return": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Return"
+    },
+    "Ringing": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Ringing"
+    },
+    "SayAlpha": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SayAlpha"
+    },
+    "SayCountedAdj": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SayCountedAdj"
+    },
+    "SayCountedNoun": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SayCountedNoun"
+    },
+    "SayCountPL": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SayCountPL"
+    },
+    "SayDigits": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SayDigits"
+    },
+    "SayNumber": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SayNumber"
+    },
+    "SayPhonetic": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SayPhonetic"
+    },
+    "SayUnixTime": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SayUnixTime"
+    },
+    "SendDTMF": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SendDTMF"
+    },
+    "SendFax": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SendFax"
+    },
+    "SendFAX_app_fax": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SendFAX_app_fax"
+    },
+    "SendFAX_res_fax": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SendFAX_res_fax"
+    },
+    "SendImage": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SendImage"
+    },
+    "SendText": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SendText"
+    },
+    "SendURL": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SendURL"
+    },
+    "Set": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Set"
+    },
+    "SetAMAFlags": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SetAMAFlags"
+    },
+    "SetCallerPres": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SetCallerPres"
+    },
+    "SetMusicOnHold": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SetMusicOnHold"
+    },
+    "SIPAddHeader": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SIPAddHeader"
+    },
+    "SIPDtmfMode": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SIPDtmfMode"
+    },
+    "SIPRemoveHeader": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SIPRemoveHeader"
+    },
+    "Skel": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Skel"
+    },
+    "SLAStation": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SLAStation"
+    },
+    "SLATrunk": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SLATrunk"
+    },
+    "SMS": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SMS"
+    },
+    "SoftHangup": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SoftHangup"
+    },
+    "SpeechActivateGrammar": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SpeechActivateGrammar"
+    },
+    "SpeechBackground": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SpeechBackground"
+    },
+    "SpeechCreate": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SpeechCreate"
+    },
+    "SpeechDeactivateGrammar": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SpeechDeactivateGrammar"
+    },
+    "SpeechDestroy": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SpeechDestroy"
+    },
+    "SpeechLoadGrammar": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SpeechLoadGrammar"
+    },
+    "SpeechProcessingSound": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SpeechProcessingSound"
+    },
+    "SpeechStart": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SpeechStart"
+    },
+    "SpeechUnloadGrammar": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SpeechUnloadGrammar"
+    },
+    "StackPop": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_StackPop"
+    },
+    "StartMusicOnHold": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_StartMusicOnHold"
+    },
+    "StopMixMonitor": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_StopMixMonitor"
+    },
+    "StopMonitor": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_StopMonitor"
+    },
+    "StopMusicOnHold": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_StopMusicOnHold"
+    },
+    "StopPlayTones": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_StopPlayTones"
+    },
+    "System": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_System"
+    },
+    "TestClient": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_TestClient"
+    },
+    "TestServer": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_TestServer"
+    },
+    "Transfer": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Transfer"
+    },
+    "TryExec": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_TryExec"
+    },
+    "TrySystem": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_TrySystem"
+    },
+    "UnpauseMonitor": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_UnpauseMonitor"
+    },
+    "UnpauseQueueMember": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_UnpauseQueueMember"
+    },
+    "UserEvent": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_UserEvent"
+    },
+    "Verbose": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Verbose"
+    },
+    "VMAuthenticate": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_VMAuthenticate"
+    },
+    "VMSayName": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_VMSayName"
+    },
+    "VoiceMail": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_VoiceMail"
+    },
+    "VoiceMailMain": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_VoiceMailMain"
+    },
+    "Wait": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Wait"
+    },
+    "WaitExten": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_WaitExten"
+    },
+    "WaitForNoise": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_WaitForNoise"
+    },
+    "WaitForRing": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_WaitForRing"
+    },
+    "WaitForSilence": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_WaitForSilence"
+    },
+    "WaitMusicOnHold": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_WaitMusicOnHold"
+    },
+    "WaitUntil": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_WaitUntil"
+    },
+    "While": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_While"
+    },
+    "Zapateller": {
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Zapateller"
+    }
+}
