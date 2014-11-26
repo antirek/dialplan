@@ -1,25 +1,17 @@
 var App = require('./application/index');
 var Func = require('./function/index');
-//var Context = require('./context');
+var Extension = require('./extension');
+var H = require('./helper');
 
-var H = {
-	$ : function (attr) {
-		return '${' + attr + '}';
-	}
-}
+
 
 var arr = [
-	App.Verbose(0, '${HANGUP}'),
+	App.Verbose(0, H.$(Func.CDR('billsec'))),
 	App.AGI('agi://127.0.0.1/agi', '12', 12),
 	App.AddQueueMember("Queue", "Member")
 ];
 
 
-
-arr = arr.map(function(element){
-	return 'exten => ' + element;
-});
-
-console.log(arr.join('\n'));
-
-console.log(H.$(Func.CDR('billsec')));
+var exten = new Extension('_2XX');
+exten.append(arr);
+console.log(exten.getDialplanSequence());
