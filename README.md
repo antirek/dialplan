@@ -19,9 +19,9 @@ var D = require('dialplan'),
     H = D.Helper;
 
 var array = [
-  App.Verbose(0, H.$(Func.CDR('billsec'))),
-  App.AGI('agi://127.0.0.1/agi', 'test', 12),
-  App.AddQueueMember("Queue", "Member")
+    App.Verbose(0, H.$(Func.CDR('billsec'))),
+    App.AGI('agi://127.0.0.1/agi', 'test', 12),
+    App.AddQueueMember("Queue", "Member")
 ];
 
 var exten = new D.Extension('_2XX');
