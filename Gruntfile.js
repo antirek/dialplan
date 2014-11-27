@@ -30,7 +30,7 @@ module.exports = function(grunt){
         }
     });
 
-    grunt.loadNpmTasks('grunt-jslint');    
-    grunt.loadNpmTasks('grunt-mocha-istanbul');    
+    grunt.loadNpmTasks('grunt-jslint');
+    grunt.loadNpmTasks('grunt-mocha-istanbul');
     grunt.registerTask('coverage', ['mocha_istanbul:coverage']);
 };

@@ -23,10 +23,10 @@
   };
 
   validateCount = function(count, args) {
-    if (count === 'number' && args.length !== count) {
+    if (typeof count === 'number' && args.length !== count) {
       throw new Error('Check count args');
     }
-    if (count === 'object') {
+    if (typeof count === 'object') {
       if (count['max'] && args.length > count['max']) {
         throw new Error('So many args');
       }
