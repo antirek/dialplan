@@ -13,20 +13,27 @@ Install
 Use
 ===
 `````
-var D = require('dialplan');
-var A = D.Applications;
+var D = require('dialplan'),
+    App = D.Application,
+    Func = D.Function,
+    H = D.Helper;
 
-var extension = new D.Extension('130');
-extension.append(new A.Answer(10));
-extension.append('dial', new A.Dial('SIP/100'));
+var array = [
+  App.Verbose(0, H.$(Func.CDR('billsec'))),
+  App.AGI('agi://127.0.0.1/agi', 'test', 12),
+  App.AddQueueMember("Queue", "Member")
+];
 
-var context1 = new D.Context('innercalls');
-context1.append(extension);
+var exten = new D.Extension('_2XX');
+exten.append(array);
+
+var context = new D.Context('outgoing');
+context.append(exten);
 
 var dialplan = new D.Dialplan();
-dialplan.append(context1);
+dialplan.append(context);
 
-dialplan.save('/etc/asterisk/extensions.conf',cb);
+dialplan.save("/etc/asterisk/extensions_generated.conf", callback);
 `````
 
 Tests

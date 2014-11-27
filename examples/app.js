@@ -1,4 +1,4 @@
-var D = require('./index');
+var D = require('../index');
 var App = D.Application;
 var Func = D.Function;
 var H = D.Helper;
