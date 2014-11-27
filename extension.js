@@ -1,7 +1,5 @@
 'use strict';
 
-var Application = require('./applications/application');
-
 var Extension = function (template) {
     this.sequence = [];
     this.template = template;
@@ -34,11 +32,7 @@ Extension.prototype.append = function () {
 };
 
 Extension.prototype.appendItem = function (item, label) {
-    if (item instanceof Application) {
-        this.sequence.push([item, label]);
-    } else {
-        throw new Error('Not dialplan application');
-    }
+    this.sequence.push([item, label]);
 };
 
 Extension.prototype.getDialplanSequence = function () {
@@ -47,7 +41,7 @@ Extension.prototype.getDialplanSequence = function () {
 
 Extension.prototype.getSequenceItemAsString = function (array, index) {
     var priority = (array[1]) ? (index + 1) + '(' + array[1] + ')' : (index + 1);
-    return [this.template, priority, array[0].getAsString()].join(',');
+    return [this.template, priority, array[0]].join(',');
 };
 
 module.exports = Extension;

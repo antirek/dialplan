@@ -2,7 +2,7 @@
     var assert = require("assert");
     
     suite("App", function() {
-    	var App = require("../../version2/application/");
+    	var App = require("../application/");
 
         test('test application name', function() {
         	var app = App.Verbose("param");

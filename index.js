@@ -1,6 +1,6 @@
-module.exports.Dialplan = require('./dialplan');
-module.exports.Context = require('./context');
+module.exports.Application = require('./application/index');
+module.exports.Function = require('./function/index');
 module.exports.Extension = require('./extension');
-module.exports.Applications = require('./applications/index');
-module.exports.Helpers = require('./helpers/index');
-module.exports.Functions = require('./functions/index');
+module.exports.Context = require('./context');
+module.exports.Dialplan = require('./dialplan');
+module.exports.Helper = require('./helper');
