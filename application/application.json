@@ -9,41 +9,75 @@
         }
     },
     "ADSIProg": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ADSIProg"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ADSIProg",
+        "validate": {
+            "count": {
+                "max": 1
+            }
+        }
     },
     "AELSub": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_AELSub"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_AELSub",
+        "validate": {
+            "count": {
+                "max": 2,
+                "min": 1
+            }
+        }
     },
     "AgentLogin": {
         "description": "https://wiki.asterisk.org/wiki/display/AST/Application_AgentLogin",
-        "validate":{
+        "validate": {
             "count": {
                 "max": 2
             }
         }
     },
     "AgentMonitorOutgoing": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_AgentMonitorOutgoing"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_AgentMonitorOutgoing",
+        "validate": {
+            "count": {
+                "max": 1
+            }
+        }
     },
     "AGI": {
         "description": "https://wiki.asterisk.org/wiki/display/AST/Application_AGI",
         "validate": {
-            "count":{
+            "count": {
                 "min": 1
             }
         }
     },
     "AlarmReceiver": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_AlarmReceiver"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_AlarmReceiver",
+        "validate": {
+            "count": 0
+        }
     },
     "AMD": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_AMD"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_AMD",
+        "validate": {
+            "count": 0
+        }
     },
     "Answer": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Answer"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Answer",
+        "validate": {
+            "count": {
+                "min": 0,
+                "max": 2
+            }
+        }
     },
     "Authenticate": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Authenticate"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Authenticate",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 4
+            }
+        }
     },
     "BackGround": {
         "description": "https://wiki.asterisk.org/wiki/display/AST/Application_BackGround"
