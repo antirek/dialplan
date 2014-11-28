@@ -34,6 +34,13 @@ var dialplan = new D.Dialplan();
 dialplan.append(context);
 
 dialplan.save("/etc/asterisk/extensions_generated.conf", callback);
+
+== Output extensions_generated.conf content ==
+[outgoing]
+exten=>_2XX,1,Verbose(0,${CDR(billsec)})
+exten=>_2XX,2,AGI(agi://127.0.0.1/agi,test,12)
+exten=>_2XX,3,AddQueueMember(Queue,Member)
+
 `````
 
 Tests
