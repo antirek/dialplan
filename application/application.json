@@ -15,13 +15,23 @@
         "description": "https://wiki.asterisk.org/wiki/display/AST/Application_AELSub"
     },
     "AgentLogin": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_AgentLogin"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_AgentLogin",
+        "validate":{
+            "count": {
+                "max": 2
+            }
+        }
     },
     "AgentMonitorOutgoing": {
         "description": "https://wiki.asterisk.org/wiki/display/AST/Application_AgentMonitorOutgoing"
     },
     "AGI": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_AGI"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_AGI",
+        "validate": {
+            "count":{
+                "min": 1
+            }
+        }
     },
     "AlarmReceiver": {
         "description": "https://wiki.asterisk.org/wiki/display/AST/Application_AlarmReceiver"
