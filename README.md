@@ -43,6 +43,14 @@ exten=>_2XX,3,AddQueueMember(Queue,Member)
 
 `````
 
+Why use? Not raw dialplan
+=========================
+1. Syntax highlight in editor
+2. Validate params
+3. Reusable code
+4. Always actual dialplan
+
+
 Tests
 =====
 > $ npm test
