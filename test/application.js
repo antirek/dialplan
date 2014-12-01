@@ -77,7 +77,6 @@
             return assert.equal(condition, 'Expression?label1:label2');
         });
 
-
     });
 
 }).call(this);

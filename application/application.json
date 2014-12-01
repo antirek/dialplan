@@ -12,7 +12,8 @@
         "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ADSIProg",
         "validate": {
             "count": {
-                "max": 1
+                "max": 1,
+                "min": 0
             }
         }
     },
@@ -29,7 +30,8 @@
         "description": "https://wiki.asterisk.org/wiki/display/AST/Application_AgentLogin",
         "validate": {
             "count": {
-                "max": 2
+                "max": 2,
+                "min": 0
             }
         }
     },
@@ -37,7 +39,8 @@
         "description": "https://wiki.asterisk.org/wiki/display/AST/Application_AgentMonitorOutgoing",
         "validate": {
             "count": {
-                "max": 1
+                "max": 1,
+                "min": 0
             }
         }
     },
