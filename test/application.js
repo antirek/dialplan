@@ -67,6 +67,17 @@
             }, Error);
         });
 
+        test('check helper condition 1', function() {
+            var condition = H.Condition("Expression", "label1");
+            return assert.equal(condition, 'Expression?label1');
+        });
+
+        test('check helper condition 2', function() {
+            var condition = H.Condition("Expression", "label1", "label2");
+            return assert.equal(condition, 'Expression?label1:label2');
+        });
+
+
     });
 
 }).call(this);

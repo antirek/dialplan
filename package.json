@@ -1,7 +1,7 @@
 {
   "name": "dialplan",
-  "version": "0.1.2",
-  "description": "quick asterisk dialplan",
+  "version": "0.1.3",
+  "description": "Write safe asterisk dialplan quickly on javascript",
   "main": "index.js",
   "directories": {
     "test": "test"
