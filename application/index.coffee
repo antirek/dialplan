@@ -27,7 +27,7 @@ validateCount = (count, args)->
 
 
 append = (name)->
-  applications[name] = ()->
+  applications[name] = ->
     args = [].slice.call arguments, 0
     validate name, args
     Application name, args

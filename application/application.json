@@ -80,570 +80,1433 @@
         }
     },
     "BackGround": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_BackGround"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_BackGround",
+        "validate": {
+            "count": {
+                "max": 4,
+                "min": 1
+            }
+        }
     },
     "BackgroundDetect": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_BackgroundDetect"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_BackgroundDetect",
+        "validate": {
+            "count": {
+                "max": 5,
+                "min": 1
+            }
+        }
     },
     "Bridge": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Bridge"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Bridge",
+        "validate": {
+            "count": {
+                "max": 2,
+                "min": 1
+            }
+        }
     },
     "Busy": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Busy"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Busy",
+        "validate": {
+            "count": {
+                "max": 1,
+                "min": 0
+            }
+        }
     },
     "CallCompletionCancel": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_CallCompletionCancel"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_CallCompletionCancel",
+        "validate": {
+            "count": 0
+        }
     },
     "CallCompletionRequest": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_CallCompletionRequest"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_CallCompletionRequest",
+        "validate": {
+            "count": 0
+        }
     },
     "CELGenUserEvent": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_CELGenUserEvent"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_CELGenUserEvent",
+        "validate": {
+            "count": {
+                "max": 2,
+                "min": 1
+            }
+        }
     },
     "ChangeMonitor": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ChangeMonitor"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ChangeMonitor",
+        "validate": {
+            "count": 1
+        }
     },
     "ChanIsAvail": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ChanIsAvail"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ChanIsAvail",
+        "validate": {
+            "count": {
+                "max": 2,
+                "min": 0
+            }
+        }
     },
     "ChannelRedirect": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ChannelRedirect"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ChannelRedirect",
+        "validate": {
+            "count": {
+                "max": 4,
+                "min": 2
+            }
+        }
     },
     "ChanSpy": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ChanSpy"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ChanSpy",
+        "validate": {
+            "count": {
+                "max": 2,
+                "min": 0
+            }
+        }
     },
     "ClearHash": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ClearHash"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ClearHash",
+        "validate": {
+            "count": 1
+        }
     },
     "ConfBridge": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ConfBridge"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ConfBridge",
+        "validate": {
+            "count": {
+                "max": 2,
+                "min": 0
+            }
+        }
     },
     "Congestion": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Congestion"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Congestion",
+        "validate": {
+            "count": {
+                "max": 1,
+                "min": 0
+            }
+        }
     },
     "ContinueWhile": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ContinueWhile"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ContinueWhile",
+        "validate": {
+            "count": 0
+        }
     },
     "ControlPlayback": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ControlPlayback"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ControlPlayback",
+        "validate": {
+            "count": {
+                "max": 8,
+                "min": 1
+            }
+        }
     },
     "DAHDIAcceptR2Call": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DAHDIAcceptR2Call"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DAHDIAcceptR2Call",
+        "validate": {
+            "count": 1
+        }
     },
     "DAHDIBarge": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DAHDIBarge"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DAHDIBarge",
+        "validate": {
+            "count": {
+                "max": 1,
+                "min": 0
+            }
+        }
     },
     "DAHDIRAS": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DAHDIRAS"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DAHDIRAS",
+        "validate": {
+            "count": 1
+        }
     },
     "DAHDIScan": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DAHDIScan"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DAHDIScan",
+        "validate": {
+            "count": {
+                "max": 1,
+                "min": 0
+            }
+        }
     },
     "DAHDISendCallreroutingFacility": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DAHDISendCallreroutingFacility"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DAHDISendCallreroutingFacility",
+        "validate": {
+            "count": {
+                "max": 3,
+                "min": 1
+            }
+        }
     },
     "DAHDISendKeypadFacility": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DAHDISendKeypadFacility"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DAHDISendKeypadFacility",
+        "validate": {
+            "count": 1
+        }
     },
     "DateTime": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DateTime"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DateTime",
+        "validate": {
+            "count": {
+                "max": 3,
+                "min": 0
+            }
+        }
     },
     "DBdel": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DBdel"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DBdel",
+        "validate": {
+            "count": 1
+        }
     },
     "DBdeltree": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DBdeltree"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DBdeltree",
+        "validate": {
+            "count": 1
+        }
     },
     "DeadAGI": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DeadAGI"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DeadAGI",
+        "validate": {
+            "count": {
+                "min": 1
+            }
+        }
     },
     "Dial": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Dial"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Dial",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 4
+            }
+        }
     },
     "Dictate": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Dictate"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Dictate",
+        "validate": {
+            "count": {
+                "min": 0,
+                "max": 2
+            }
+        }
     },
     "Directory": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Directory"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Directory",
+        "validate": {
+            "count": {
+                "min": 0,
+                "max": 3
+            }
+        }
     },
     "DISA": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DISA"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DISA",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 5
+            }
+        }
     },
     "DumpChan": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DumpChan"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_DumpChan",
+        "validate": {
+            "count": {
+                "min": 0,
+                "max": 1
+            }
+        }
     },
     "EAGI": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_EAGI"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_EAGI",
+        "validate": {
+            "count": {
+                "min": 1
+            }
+        }
     },
     "Echo": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Echo"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Echo",
+        "validate": {
+            "count": 0
+        }
     },
     "EndWhile": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_EndWhile"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_EndWhile",
+        "validate": {
+            "count": 0
+        }
     },
     "Exec": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Exec"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Exec",
+        "validate": {
+            "count": 1
+        }
     },
     "ExecIf": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ExecIf"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ExecIf",
+        "validate": {
+            "count": 1
+        }
     },
     "ExecIfTime": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ExecIfTime"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ExecIfTime",
+        "validate": {
+            "count": 5
+        }
     },
     "ExitWhile": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ExitWhile"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ExitWhile",
+        "validate": {
+            "count": 0
+        }
     },
     "ExtenSpy": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ExtenSpy"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ExtenSpy",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 2
+            }
+        }
     },
     "ExternalIVR": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ExternalIVR"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ExternalIVR",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 2
+            }
+        }
     },
     "Festival": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Festival"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Festival",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 2
+            }
+        }
     },
     "Flash": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Flash"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Flash",
+        "validate": {
+            "count": 0
+        }
     },
     "FollowMe": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_FollowMe"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_FollowMe",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 2
+            }
+        }
     },
     "ForkCDR": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ForkCDR"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ForkCDR",
+        "validate": {
+            "count": {
+                "min": 0,
+                "max": 1
+            }
+        }
     },
     "GetCPEID": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_GetCPEID"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_GetCPEID",
+        "validate": {
+            "count": 0
+        }
     },
     "Gosub": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Gosub"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Gosub",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 3
+            }
+        }
     },
     "GosubIf": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_GosubIf"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_GosubIf",
+        "validate": {
+            "count": 1
+        }
     },
     "Goto": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Goto"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Goto",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 3
+            }
+        }
     },
     "GotoIf": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_GotoIf"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_GotoIf",
+        "validate": {
+            "count": 1
+        }
     },
     "GotoIfTime": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_GotoIfTime"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_GotoIfTime",
+        "validate": {
+            "count": 5
+        }
     },
     "Hangup": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Hangup"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Hangup",
+        "validate": {
+            "count": {
+                "min": 0,
+                "max": 1
+            }
+        }
     },
     "IAX2Provision": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_IAX2Provision"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_IAX2Provision",
+        "validate": {
+            "count": {
+                "min": 0,
+                "max": 1
+            }
+        }
     },
     "ICES": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ICES"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ICES",
+        "validate": {
+            "count": 1
+        }
     },
     "ImportVar": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ImportVar"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ImportVar",
+        "validate": {
+            "count": 1
+        }
     },
     "Incomplete": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Incomplete"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Incomplete",
+        "validate": {
+            "count": {
+                "min": 0,
+                "max": 1
+            }
+        }
     },
     "IVRDemo": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_IVRDemo"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_IVRDemo",
+        "validate": {
+            "count": 1
+        }
     },
     "JabberJoin": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_JabberJoin"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_JabberJoin",
+        "validate": {
+            "count": {
+                "min": 2,
+                "max": 3
+            }
+        }
     },
     "JabberLeave": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_JabberLeave"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_JabberLeave",
+        "validate": {
+            "count": {
+                "min": 2,
+                "max": 3
+            }
+        }
     },
     "JabberSend": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_JabberSend"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_JabberSend",
+        "validate": {
+            "count": 3
+        }
     },
     "JabberSendGroup": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_JabberSendGroup"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_JabberSendGroup",
+        "validate": {
+            "count": {
+                "min": 3,
+                "max": 4
+            }
+        }
     },
     "JabberStatus": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_JabberStatus"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_JabberStatus",
+        "validate": {
+            "count": 3
+        }
     },
     "JACK": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_JACK"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_JACK",
+        "validate": {
+            "count": {
+                "min": 0,
+                "max": 1
+            }
+        }
     },
     "Log": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Log"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Log",
+        "validate": {
+            "count": 2
+        }
     },
     "Macro": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Macro"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Macro",
+        "validate": {
+            "count": {
+                "min": 1
+            }
+        }
     },
     "MacroExclusive": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MacroExclusive"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MacroExclusive",
+        "validate": {
+            "count": {
+                "min": 1
+            }
+        }
     },
     "MacroExit": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MacroExit"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MacroExit",
+        "validate": {
+            "count": 0
+        }
     },
     "MacroIf": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MacroIf"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MacroIf",
+        "validate": {
+            "count": 1
+        }
     },
     "MailboxExists": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MailboxExists"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MailboxExists",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 2
+            }
+        }
     },
     "MeetMe": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MeetMe"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MeetMe",
+        "validate": {
+            "count": {
+                "min": 0,
+                "max": 3
+            }
+        }
     },
     "MeetMeAdmin": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MeetMeAdmin"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MeetMeAdmin",
+        "validate": {
+            "count": {
+                "min": 2,
+                "max": 3
+            }
+        }
     },
     "MeetMeChannelAdmin": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MeetMeChannelAdmin"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MeetMeChannelAdmin",
+        "validate": {
+            "count": 2
+        }
     },
     "MeetMeCount": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MeetMeCount"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MeetMeCount",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 2
+            }
+        }
     },
     "Milliwatt": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Milliwatt"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Milliwatt",
+        "validate": {
+            "count": {
+                "min": 0,
+                "max": 1
+            }
+        }
     },
     "MinivmAccMess": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MinivmAccMess"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MinivmAccMess",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 2
+            }
+        }
     },
     "MinivmDelete": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MinivmDelete"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MinivmDelete",
+        "validate": {
+            "count": 1
+        }
     },
     "MinivmGreet": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MinivmGreet"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MinivmGreet",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 2
+            }
+        }
     },
     "MinivmMWI": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MinivmMWI"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MinivmMWI",
+        "validate": {
+            "count": 4
+        }
     },
     "MinivmNotify": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MinivmNotify"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MinivmNotify",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 2
+            }
+        }
     },
     "MinivmRecord": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MinivmRecord"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MinivmRecord",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 2
+            }
+        }
     },
     "MixMonitor": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MixMonitor"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MixMonitor",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 3
+            }
+        }
     },
     "Monitor": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Monitor"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Monitor",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 3
+            }
+        }
     },
     "Morsecode": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Morsecode"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Morsecode",
+        "validate": {
+            "count": 1
+        }
     },
     "MP3Player": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MP3Player"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MP3Player",
+        "validate": {
+            "count": 1
+        }
     },
     "MSet": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MSet"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MSet",
+        "validate": {
+            "count": 2
+        }
     },
     "MusicOnHold": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MusicOnHold"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_MusicOnHold",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 2
+            }
+        }
     },
     "NBScat": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_NBScat"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_NBScat",
+        "validate": {
+            "count": 0
+        }
     },
     "NoCDR": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_NoCDR"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_NoCDR",
+        "validate": {
+            "count": 0
+        }
     },
     "NoOp": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_NoOp"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_NoOp",
+        "validate": {
+            "count": 1
+        }
     },
     "ODBC_Commit": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ODBC_Commit"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ODBC_Commit",
+        "validate": {
+            "count": {
+                "min": 0,
+                "max": 1
+            }
+        }
     },
     "ODBC_Rollback": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ODBC_Rollback"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ODBC_Rollback",
+        "validate": {
+            "count": {
+                "min": 0,
+                "max": 1
+            }
+        }
     },
     "ODBCFinish": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ODBCFinish"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ODBCFinish",
+        "validate": {
+            "count": 1
+        }
     },
     "Originate": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Originate"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Originate",
+        "validate": {
+            "count": {
+                "min": 3,
+                "max": 5
+            }
+        }
     },
     "OSPAuth": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_OSPAuth"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_OSPAuth",
+        "validate": {
+            "count": {
+                "min": 0,
+                "max": 2
+            }
+        }
     },
     "OSPFinish": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_OSPFinish"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_OSPFinish",
+        "validate": {
+            "count": {
+                "min": 0,
+                "max": 2
+            }
+        }
     },
     "OSPLookup": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_OSPLookup"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_OSPLookup",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 3
+            }
+        }
     },
     "OSPNext": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_OSPNext"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_OSPNext",
+        "validate": {
+            "count": 0
+        }
     },
     "Page": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Page"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Page",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 3
+            }
+        }
     },
     "Park": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Park"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Park",
+        "validate": {
+            "count": {
+                "min": 0,
+                "max": 6
+            }
+        }
     },
     "ParkAndAnnounce": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ParkAndAnnounce"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ParkAndAnnounce",
+        "validate": {
+            "count": {
+                "min": 3,
+                "max": 4
+            }
+        }
     },
     "ParkedCall": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ParkedCall"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ParkedCall",
+        "validate": {
+            "count": {
+                "min": 0,
+                "max": 2
+            }
+        }
     },
     "PauseMonitor": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_PauseMonitor"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_PauseMonitor",
+        "validate": {
+            "count": 0
+        }
     },
     "PauseQueueMember": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_PauseQueueMember"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_PauseQueueMember",
+        "validate": {
+            "count": {
+                "min": 0,
+                "max": 4
+            }
+        }
     },
     "Pickup": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Pickup"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Pickup",
+        "validate": {
+            "count": 1
+        }
     },
     "PickupChan": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_PickupChan"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_PickupChan",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 2
+            }
+        }
     },
     "Playback": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Playback"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Playback",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 2
+            }
+        }
     },
     "PlayTones": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_PlayTones"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_PlayTones",
+        "validate": {
+            "count": 1
+        }
     },
     "PrivacyManager": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_PrivacyManager"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_PrivacyManager",
+        "validate": {
+            "count": 4
+        }
     },
     "Proceeding": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Proceeding"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Proceeding",
+        "validate": {
+            "count": 0
+        }
     },
     "Progress": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Progress"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Progress",
+        "validate": {
+            "count": 0
+        }
     },
     "Queue": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Queue"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Queue",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 10
+            }
+        }
     },
     "QueueLog": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_QueueLog"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_QueueLog",
+        "validate": {
+            "count": {
+                "min": 4,
+                "max": 5
+            }
+        }
     },
     "RaiseException": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_RaiseException"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_RaiseException",
+        "validate": {
+            "count": 1
+        }
     },
     "Read": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Read"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Read",
+        "validate": {
+            "count": {
+                "min": 2,
+                "max": 6
+            }
+        }
     },
     "ReadExten": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ReadExten"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ReadExten",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 5
+            }
+        }
     },
     "ReadFile": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ReadFile"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ReadFile",
+        "validate": {
+            "count": 1
+        }
     },
     "ReceiveFax": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ReceiveFax"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ReceiveFax",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 2
+            }
+        }
     },
     "ReceiveFAX_app_fax": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ReceiveFAX_app_fax"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ReceiveFAX_app_fax",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 2
+            }
+        }
     },
     "ReceiveFAX_res_fax": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ReceiveFAX_res_fax"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ReceiveFAX_res_fax",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 2
+            }
+        }
     },
     "Record": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Record"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Record",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 4
+            }
+        }
     },
     "RemoveQueueMember": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_RemoveQueueMember"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_RemoveQueueMember",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 2
+            }
+        }
     },
     "ResetCDR": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ResetCDR"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_ResetCDR",
+        "validate": {
+            "count": {
+                "min": 0,
+                "max": 1
+            }
+        }
     },
     "RetryDial": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_RetryDial"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_RetryDial",
+        "validate": {
+            "count": 4
+        }
     },
     "Return": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Return"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Return",
+        "validate": {
+            "count": {
+                "min": 0,
+                "max": 1
+            }
+        }
     },
     "Ringing": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Ringing"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Ringing",
+        "validate": {
+            "count": 0
+        }
     },
     "SayAlpha": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SayAlpha"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SayAlpha",
+        "validate": {
+            "count": 1
+        }
     },
     "SayCountedAdj": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SayCountedAdj"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SayCountedAdj",
+        "validate": {
+            "count": {
+                "min": 2,
+                "max": 3
+            }
+        }
     },
     "SayCountedNoun": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SayCountedNoun"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SayCountedNoun",
+        "validate": {
+            "count": 2
+        }
     },
     "SayCountPL": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SayCountPL"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SayCountPL",
+        "validate": {
+            "count": 4
+        }
     },
     "SayDigits": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SayDigits"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SayDigits",
+        "validate": {
+            "count": 1
+        }
     },
     "SayNumber": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SayNumber"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SayNumber",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 2
+            }
+        }
     },
     "SayPhonetic": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SayPhonetic"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SayPhonetic",
+        "validate": {
+            "count": 1
+        }
     },
     "SayUnixTime": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SayUnixTime"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SayUnixTime",
+        "validate": {
+            "count": {
+                "min": 0,
+                "max": 3
+            }
+        }
     },
     "SendDTMF": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SendDTMF"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SendDTMF",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 4
+            }
+        }
     },
     "SendFax": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SendFax"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SendFax",
+        "validate": {
+            "count": {
+                "min": 0,
+                "max": 2
+            }
+        }
     },
     "SendFAX_app_fax": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SendFAX_app_fax"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SendFAX_app_fax",
+        "validate": {
+            "count": {
+                "min": 0,
+                "max": 2
+            }
+        }
     },
     "SendFAX_res_fax": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SendFAX_res_fax"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SendFAX_res_fax",
+        "validate": {
+            "count": {
+                "min": 0,
+                "max": 2
+            }
+        }
     },
     "SendImage": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SendImage"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SendImage",
+        "validate": {
+            "count": 1
+        }
     },
     "SendText": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SendText"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SendText",
+        "validate": {
+            "count": 1
+        }
     },
     "SendURL": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SendURL"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SendURL",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 2
+            }
+        }
     },
     "Set": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Set"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Set",
+        "validate": {
+            "count": 1
+        }
     },
     "SetAMAFlags": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SetAMAFlags"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SetAMAFlags",
+        "validate": {
+            "count": {
+                "min": 0,
+                "max": 1
+            }
+        }
     },
     "SetCallerPres": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SetCallerPres"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SetCallerPres",
+        "validate": {
+            "count": 1
+        }
     },
     "SetMusicOnHold": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SetMusicOnHold"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SetMusicOnHold",
+        "validate": {
+            "count": 1
+        }
     },
     "SIPAddHeader": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SIPAddHeader"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SIPAddHeader",
+        "validate": {
+            "count": 1
+        }
     },
     "SIPDtmfMode": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SIPDtmfMode"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SIPDtmfMode",
+        "validate": {
+            "count": 1
+        }
     },
     "SIPRemoveHeader": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SIPRemoveHeader"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SIPRemoveHeader",
+        "validate": {
+            "count": {
+                "min": 0,
+                "max": 1
+            }
+        }
     },
     "Skel": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Skel"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Skel",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 2
+            }
+        }
     },
     "SLAStation": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SLAStation"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SLAStation",
+        "validate": {
+            "count": 1
+        }
     },
     "SLATrunk": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SLATrunk"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SLATrunk",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 2
+            }
+        }
     },
     "SMS": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SMS"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SMS",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 4
+            }
+        }
     },
     "SoftHangup": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SoftHangup"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SoftHangup",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 2
+            }
+        }
     },
     "SpeechActivateGrammar": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SpeechActivateGrammar"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SpeechActivateGrammar",
+        "validate": {
+            "count": 1
+        }
     },
     "SpeechBackground": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SpeechBackground"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SpeechBackground",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 3
+            }
+        }
     },
     "SpeechCreate": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SpeechCreate"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SpeechCreate",
+        "validate": {
+            "count": 1
+        }
     },
     "SpeechDeactivateGrammar": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SpeechDeactivateGrammar"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SpeechDeactivateGrammar",
+        "validate": {
+            "count": 1
+        }
     },
     "SpeechDestroy": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SpeechDestroy"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SpeechDestroy",
+        "validate": {
+            "count": 0
+        }
     },
     "SpeechLoadGrammar": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SpeechLoadGrammar"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SpeechLoadGrammar",
+        "validate": {
+            "count": 2
+        }
     },
     "SpeechProcessingSound": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SpeechProcessingSound"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SpeechProcessingSound",
+        "validate": {
+            "count": 1
+        }
     },
     "SpeechStart": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SpeechStart"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SpeechStart",
+        "validate": {
+            "count": 0
+        }
     },
     "SpeechUnloadGrammar": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SpeechUnloadGrammar"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_SpeechUnloadGrammar",
+        "validate": {
+            "count": 1
+        }
     },
     "StackPop": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_StackPop"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_StackPop",
+        "validate": {
+            "count": 0
+        }
     },
     "StartMusicOnHold": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_StartMusicOnHold"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_StartMusicOnHold",
+        "validate": {
+            "count": 1
+        }
     },
     "StopMixMonitor": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_StopMixMonitor"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_StopMixMonitor",
+        "validate": {
+            "count": 0
+        }
     },
     "StopMonitor": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_StopMonitor"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_StopMonitor",
+        "validate": {
+            "count": 0
+        }
     },
     "StopMusicOnHold": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_StopMusicOnHold"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_StopMusicOnHold",
+        "validate": {
+            "count": 0
+        }
     },
     "StopPlayTones": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_StopPlayTones"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_StopPlayTones",
+        "validate": {
+            "count": 0
+        }
     },
     "System": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_System"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_System",
+        "validate": {
+            "count": 1
+        }
     },
     "TestClient": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_TestClient"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_TestClient",
+        "validate": {
+            "count": 1
+        }
     },
     "TestServer": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_TestServer"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_TestServer",
+        "validate": {
+            "count": 0
+        }
     },
     "Transfer": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Transfer"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Transfer",
+        "validate": {
+            "count": {
+                "min": 0,
+                "max": 1
+            }
+        }
     },
     "TryExec": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_TryExec"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_TryExec",
+        "validate": {
+            "count": 1
+        }
     },
     "TrySystem": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_TrySystem"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_TrySystem",
+        "validate": {
+            "count": 1
+        }
     },
     "UnpauseMonitor": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_UnpauseMonitor"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_UnpauseMonitor",
+        "validate": {
+            "count": 0
+        }
     },
     "UnpauseQueueMember": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_UnpauseQueueMember"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_UnpauseQueueMember",
+        "validate": {
+            "count": {
+                "min": 0,
+                "max": 4
+            }
+        }
     },
     "UserEvent": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_UserEvent"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_UserEvent",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 2
+            }
+        }
     },
     "Verbose": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Verbose"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Verbose",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 2
+            }
+        }
     },
     "VMAuthenticate": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_VMAuthenticate"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_VMAuthenticate",
+        "validate": {
+            "count": {
+                "min": 0,
+                "max": 2
+            }
+        }
     },
     "VMSayName": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_VMSayName"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_VMSayName",
+        "validate": {
+            "count": {
+                "min": 0,
+                "max": 1
+            }
+        }
     },
     "VoiceMail": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_VoiceMail"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_VoiceMail",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 2
+            }
+        }
     },
     "VoiceMailMain": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_VoiceMailMain"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_VoiceMailMain",
+        "validate": {
+            "count": {
+                "min": 0,
+                "max": 2
+            }
+        }
     },
     "Wait": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Wait"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Wait",
+        "validate": {
+            "count": 1
+        }
     },
     "WaitExten": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_WaitExten"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_WaitExten",
+        "validate": {
+            "count": {
+                "min": 0,
+                "max": 2
+            }
+        }
     },
     "WaitForNoise": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_WaitForNoise"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_WaitForNoise",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 3
+            }
+        }
     },
     "WaitForRing": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_WaitForRing"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_WaitForRing",
+        "validate": {
+            "count": 1
+        }
     },
     "WaitForSilence": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_WaitForSilence"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_WaitForSilence",
+        "validate": {
+            "count": {
+                "min": 1,
+                "max": 3
+            }
+        }
     },
     "WaitMusicOnHold": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_WaitMusicOnHold"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_WaitMusicOnHold",
+        "validate": {
+            "count": 1
+        }
     },
     "WaitUntil": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_WaitUntil"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_WaitUntil",
+        "validate": {
+            "count": 1
+        }
     },
     "While": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_While"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_While",
+        "validate": {
+            "count": 1
+        }
     },
     "Zapateller": {
-        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Zapateller"
+        "description": "https://wiki.asterisk.org/wiki/display/AST/Application_Zapateller",
+        "validate": {
+            "count": 1
+        }
     }
 }
