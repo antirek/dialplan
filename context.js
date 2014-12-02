@@ -22,15 +22,20 @@ Context.prototype.getName = function () {
 };
 
 Context.prototype.getContent = function () {
-    var content = [], i, hh;
-
+    var content = [];
     content.push(this.getName());
+    content.push(this.getExtensionsContent());
+    return content.join('\n');
+};
+
+Context.prototype.getExtensionsContent = function () {
+    var content = [], i, hh;
     for (i = 0; i < this.extensions.length; i++) {
         hh = this.getContentForOneExtension(this.extensions[i]);
         content = content.concat(hh);
     }
-
     return content.join('\n');
-};
+}
+
 
 module.exports = Context;
