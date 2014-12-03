@@ -37,5 +37,13 @@ Context.prototype.getExtensionsContent = function () {
     return content.join('\n');
 }
 
+Context.prototype.getExtensionsAsPlainArray = function () {
+    var array = [], i;
+    for (i = 0; i < this.extensions.length; i++) {
+        var extension = this.extensions[i];
+        array = array.concat(extension.getDialplanSequence());
+    }
+    return array;
+}
 
 module.exports = Context;

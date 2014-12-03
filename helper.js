@@ -22,7 +22,7 @@
   Condition = function() {
     var args, str;
     args = [].slice.call(arguments, 0);
-    if (args.length < 2 && args.length > 3) {
+    if (args.length < 2 || args.length > 3) {
       throw new Error('Check count args');
     }
     str = args[0] + '?' + args[1];

@@ -19,7 +19,7 @@ Global = (str)->
 Condition = ->
   args = [].slice.call arguments, 0
   
-  if args.length < 2 and args.length > 3
+  if args.length < 2 or args.length > 3
     throw new Error 'Check count args'
 
   str = args[0] + '?' + args[1]

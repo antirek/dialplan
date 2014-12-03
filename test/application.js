@@ -77,6 +77,12 @@
             return assert.equal(condition, 'Expression?label1:label2');
         });
 
+        test('check helper condition 3', function() {
+            return assert.throws(function(){
+                var condition = H.Condition("Expression", "label1", "label2", "error");
+            }, Error);
+        });
+
     });
 
 }).call(this);
