@@ -60,7 +60,6 @@
                 ]);
         });
 
-
         test('check get include as array', function() {
             var context = new D.Context('outer_calls');
 
@@ -77,6 +76,48 @@
                 ]);
         });
 
+
+        test('check get context as object', function() {
+            var context = new D.Context('outer_calls');
+
+            var include = new D.Include('international_calls');
+            context.append(include);
+            context.append(include);
+
+            context.append(
+                new D.Extension('_2XXXXXX')
+                    .append(App.Dial('qw', 120))
+                    .append(App.Dial('qq', 130))
+                );
+            
+            var object = context.makeObject();
+
+            return assert.deepEqual(object,
+                {
+                    include: ['international_calls', 'international_calls'],
+                    exten: ['_2XXXXXX,1,Dial(qw,120)', '_2XXXXXX,2,Dial(qq,130)']
+                });
+        });
+
+        test('check append array to context', function() {
+            var context = new D.Context('outer_calls');
+
+            context.append([
+                new D.Extension('_2XXXXXX')
+                    .append(App.Dial('qw', 120))
+                    .append(App.Dial('qq', 130)),
+                new D.Include('international_calls'),
+                new D.Include('international_calls') 
+                ]);
+            
+            var object = context.makeObject();
+
+            return assert.deepEqual(object,
+                {
+                    include: ['international_calls', 'international_calls'],
+                    exten: ['_2XXXXXX,1,Dial(qw,120)', '_2XXXXXX,2,Dial(qq,130)']
+                });
+        });
 
     });
 

@@ -9,13 +9,30 @@ var Context = function (name) {
 };
 
 Context.prototype.append = function (append) {
+    var i;
+    if (append instanceof Array) {
+        if (append.length < 1) {
+            throw new Error('append empty array');
+        }
+
+        for (i = 0; i < append.length; i++) {
+            this.appendOne(append[i]);
+        }
+    } else {
+        this.appendOne(append);
+    }
+    return this;
+};
+
+Context.prototype.appendOne = function (append){
     if(append instanceof Extension){
         this.extensions.push(append);
     }else if (append instanceof Include){
         this.includes.push(append);
+    }else{
+        throw new Error('check append value');
     }
-    return this;
-};
+}
 
 Context.prototype.getContentForOneExtension = function (extension) {
     var sequence = extension.getDialplanSequence(),
@@ -43,7 +60,7 @@ Context.prototype.getExtensionsContent = function () {
         content = content.concat(hh);
     }
     return content.join('\n');
-}
+};
 
 Context.prototype.getExtenArray = function () {
     var array = [], i;
@@ -52,7 +69,7 @@ Context.prototype.getExtenArray = function () {
         array = array.concat(extension.getDialplanSequence());
     }
     return array;
-}
+};
 
 Context.prototype.getIncludeArray = function () {
     var array = [], i;
@@ -61,6 +78,13 @@ Context.prototype.getIncludeArray = function () {
         array = array.concat(include.getContextName());
     }
     return array;
-}
+};
+
+Context.prototype.makeObject = function(){
+    return {
+        include: this.getIncludeArray(),
+        exten: this.getExtenArray()
+    }
+};
 
 module.exports = Context;
