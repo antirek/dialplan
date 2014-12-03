@@ -8,6 +8,7 @@ var Dialplan = function () {
 
 Dialplan.prototype.append = function (context) {
     this.contexts.push(context);
+    return this;
 };
 
 Dialplan.prototype.getContent = function () {

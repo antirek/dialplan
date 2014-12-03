@@ -14,6 +14,7 @@ Context.prototype.append = function (append) {
     }else if (append instanceof Include){
         this.includes.push(append);
     }
+    return this;
 };
 
 Context.prototype.getContentForOneExtension = function (extension) {
