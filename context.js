@@ -1,12 +1,19 @@
 'use strict';
+var Extension = require('./extension');
+var Include = require('./include');
 
 var Context = function (name) {
     this.extensions = [];
+    this.includes = [];
     this.name = name;
 };
 
-Context.prototype.append = function (extension) {
-    this.extensions.push(extension);
+Context.prototype.append = function (append) {
+    if(append instanceof Extension){
+        this.extensions.push(append);
+    }else if (append instanceof Include){
+        this.includes.push(append);
+    }
 };
 
 Context.prototype.getContentForOneExtension = function (extension) {
@@ -37,11 +44,20 @@ Context.prototype.getExtensionsContent = function () {
     return content.join('\n');
 }
 
-Context.prototype.getExtensionsAsPlainArray = function () {
+Context.prototype.getExtenArray = function () {
     var array = [], i;
     for (i = 0; i < this.extensions.length; i++) {
         var extension = this.extensions[i];
         array = array.concat(extension.getDialplanSequence());
+    }
+    return array;
+}
+
+Context.prototype.getIncludeArray = function () {
+    var array = [], i;
+    for (i = 0; i < this.includes.length; i++) {
+        var include = this.includes[i];
+        array = array.concat(include.getContextName());
     }
     return array;
 }

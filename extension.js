@@ -29,6 +29,7 @@ Extension.prototype.append = function () {
     } else {
         this.appendItem(item, label);
     }
+    return this;
 };
 
 Extension.prototype.appendItem = function (item, label) {

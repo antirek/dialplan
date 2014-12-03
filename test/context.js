@@ -33,7 +33,7 @@
             extension.append(App.Dial('qw', 120));
             extension.append(App.Dial('qq', 130));
 
-            var array = context.getExtensionsAsPlainArray();
+            var array = context.getExtenArray();
 
             return assert.deepEqual(array,
                 [
@@ -41,6 +41,42 @@
                     '_2XXXXXX,2,Dial(qq,130)'
                 ]);
         });
+
+        test('check get context chain method', function() {
+            var context = new D.Context('outercalls');
+
+            context.append(
+                new D.Extension('_2XXXXXX')
+                    .append(App.Dial('qw', 120))
+                    .append(App.Dial('qq', 130))
+                );
+
+            var array = context.getExtenArray();
+
+            return assert.deepEqual(array,
+                [
+                    '_2XXXXXX,1,Dial(qw,120)', 
+                    '_2XXXXXX,2,Dial(qq,130)'
+                ]);
+        });
+
+
+        test('check get include as array', function() {
+            var context = new D.Context('outer_calls');
+
+            var include = new D.Include('international_calls');
+            context.append(include);
+            context.append(include);
+            
+            var array = context.getIncludeArray();
+
+            return assert.deepEqual(array,
+                [
+                    'international_calls', 
+                    'international_calls'
+                ]);
+        });
+
 
     });
 
